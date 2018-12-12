@@ -4,6 +4,7 @@
  * Do not modify these two selectors, please
  */
 html {
+	font-family: 'Roboto Condensed', sans-serif;
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -23,3 +24,10 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+.container {
+ 	width: 450px;
+ 	background-color: white;
+ 	margin: auto;
+ 	margin-top: 140px;
+ }

@@ -1,0 +1,33 @@
+section.new-tweet {
+	border: solid lightgrey;
+	border-radius: 6px;
+}
+
+.new-tweet h2 {
+	width: 90%;
+	margin-left: 1em;
+	border-bottom: solid black;
+}
+
+.new-tweet textarea {;
+	width: 90%;
+	padding-top: .5em;
+	padding-left: .5em;
+	padding-right: .5em;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	margin-bottom: .2em;
+}
+.new-tweet form [type="submit"] {
+	margin-left: 1.5em;
+	margin-bottom: 1em;
+}
+
+.red-text {
+	color: red;
+}
+
+.new-tweet form span {
+	margin-left: 20em;
+	padding-bottom: 1em;
+}
