@@ -11,13 +11,14 @@ section#tweet-container {
 }
 #tweet-container article:hover {
 	opacity: 1;
+	background-color: whitesmoke;
 	margin-top: 10px;
 	border: solid lightgrey;
 	border-radius: 6px
 }
 /*IMG, NAME, HANDLE*/
 #tweet-container header {
-	background-color: #8ad1a9;
+	background-color: mediumseagreen;
 	padding: 10px;
 	padding-bottom: 75px;
 	border-top-left-radius: 6px;
