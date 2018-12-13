@@ -2,9 +2,14 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+## Screenshots
 
-## Getting Started
+![Initial Page Load](https://github.com/MikeEngerer/tweeter/blob/master/public/images/initial.png "Initial Page Load")
+![Compose Tweet](https://github.com/MikeEngerer/tweeter/blob/master/public/images/compose.png "Compose Tweet")
+![Empty Input](https://github.com/MikeEngerer/TinyApp/blob/master/screenshots/login_register.png "Empty Input")
+![Input Too Long](https://github.com/MikeEngerer/tweeter/blob/master/public/images/tooLong.png "Input Too Long")
+
+## Install/Run
 
 1. Fork this repository, then clone your fork of this repository.
 2. Install dependencies using the `npm install` command.
@@ -15,3 +20,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- Mongodb
+- Md5
+- Chance
+- Body Parser
