@@ -1,22 +1,24 @@
 section.new-tweet {
-	border: solid lightgrey;
+	display: none;
+	border: solid mediumseagreen;
 	border-radius: 6px;
 }
 
 .new-tweet .error {
 	display: none;
 	text-align: center;
-	border: solid lightgrey;
+	border: 0 solid mediumseagreen;
 	background-color: #8ad1a9;
 	padding-left: 10px;
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px;
 	color: black;
 }
+
 .new-tweet h2 {
 	width: 90%;
 	margin-left: 1em;
-	border-bottom: solid black;
+	border-bottom: solid mediumseagreen;
 }
 
 .new-tweet textarea {;
@@ -28,6 +30,7 @@ section.new-tweet {
 	margin-right: 1.5em;
 	margin-bottom: .2em;
 }
+
 .new-tweet form [type="submit"] {
 	margin-left: 1.5em;
 	margin-bottom: 1em;

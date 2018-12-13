@@ -5,15 +5,16 @@ section#tweet-container {
 #tweet-container article {
 	opacity: .7;
 	margin-top: 10px;
-	border: solid lightgrey;
+	border: solid mediumseagreen;
 	border-radius: 6px
 
 }
+
 #tweet-container article:hover {
 	opacity: 1;
 	background-color: whitesmoke;
 	margin-top: 10px;
-	border: solid lightgrey;
+	border: solid mediumseagreen;
 	border-radius: 6px
 }
 /*IMG, NAME, HANDLE*/
@@ -29,7 +30,6 @@ section#tweet-container {
 	font-size: 2em;
 	float: left;
 	margin: 0;
-
 }
 /*HANDLE*/
 #tweet-container h5 {
@@ -50,15 +50,39 @@ section#tweet-container {
 
 #tweet-container footer {
 	padding-bottom: 30px;
-	border-top:solid lightgrey;
+	border-top:solid mediumseagreen;
 
 }
 /*TIME AGO*/
 #tweet-container footer h5 {
 	float: left;
-	width: 100%;
-	padding-left: 10px;
-	padding-top: 2px
+	font-size: .8em;
+	width: 50%;
+	padding-left: 7px;
+	padding-top: 7px;
+}
+
+#tweet-container footer div {
+	display: inline-block;
+	margin-bottom: 40px;
+}
+
+#tweet-container footer i {
+	display: none;
+	margin-top: 4px;
+	margin-right: 3px;
+	float: right;
+	padding: 3px;
+
+}
+
+#tweet-container article:hover i {
+	display: block;
+	margin-top: 4px;
+	margin-right: 3px;
+	float: right;
+	padding: 3px;
+
 }
 /*TEXT CONTENT*/
 #tweet-container p {
@@ -67,3 +91,10 @@ section#tweet-container {
 	padding-left: 16px;
 	padding-right: 16px
 }
+
+
+
+/*
+footer:hover i {
+
+}*/
