@@ -1,16 +1,17 @@
+/*full nav bar*/
 #nav-bar {
 	z-index: 1;
 	position: fixed;
 	height: 80px;
 	width: 100%;
-	background-color: mediumSeaGreen;
+	background-color:; mediumSeaGreen;
 	color: #e8fdff;
 	padding-left: 2em;
 	padding-right: 2em;
  	top: 0;
 
 }
-
+/*compose button has diff styles depending on hover status*/
 #nav-bar .compose {
 	font-weight: 500;
 	font-size: 1.3em;
@@ -23,7 +24,7 @@
 	height: 60px;
 	width: 120px
 }
-
+/*compose button hover styles*/
 #nav-bar .compose:hover {
 	font-weight: 500;
 	font-size: 1.3em;
@@ -36,13 +37,13 @@
 	height: 60px;
 	width: 120px
 }
-
+/*logo*/
 #nav-bar .logo {
 	height: 80px;
 	width: 80px;
 	float: left;
 }
-
+/*title*/
 #nav-bar .header {
 	float: left;
 	line-height: 1.5;

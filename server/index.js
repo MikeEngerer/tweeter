@@ -1,6 +1,6 @@
 "use strict";
 
-// Basic express setup:
+// Basic express/mongo setup:
 
 const PORT            = 8080;
 const express         = require("express");
@@ -11,12 +11,13 @@ const MONGODB_URI     = "mongodb://localhost:27017/tweeter";
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-
+// opens connection to db
 MongoClient.connect(MONGODB_URI, (err, db) => {
 	if (err) {
 		console.error(`Failed to connect: ${MONGODB_URI}`);
 		throw err;
 	}
+	// db passed to data-helpers for loading/posting functionality 
 	const DataHelpers = require("./lib/data-helpers.js")(db);
 
 	// The `tweets-routes` module works similarly: we pass it the `DataHelpers` object

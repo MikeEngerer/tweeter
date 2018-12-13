@@ -1,9 +1,10 @@
+/*entire compose box invis on page load*/
 section.new-tweet {
 	display: none;
 	border: solid mediumseagreen;
 	border-radius: 6px;
 }
-
+/* error box initially hidden, displays with animation when user input evaluates to error*/
 .new-tweet .error {
 	display: none;
 	text-align: center;
@@ -14,13 +15,13 @@ section.new-tweet {
 	border-top-right-radius: 6px;
 	color: black;
 }
-
+/*Title*/
 .new-tweet h2 {
 	width: 90%;
 	margin-left: 1em;
 	border-bottom: solid mediumseagreen;
 }
-
+/*input field, focus() on when compose box initially slides into view*/
 .new-tweet textarea {;
 	width: 90%;
 	padding-top: .5em;
@@ -30,16 +31,16 @@ section.new-tweet {
 	margin-right: 1.5em;
 	margin-bottom: .2em;
 }
-
+/*submit button*/
 .new-tweet form [type="submit"] {
 	margin-left: 1.5em;
 	margin-bottom: 1em;
 }
-
+/*class applied to char counter in event of invalid char value*/
 .red-text {
 	color: red;
 }
-
+/*char count*/
 .new-tweet form span {
 	float: right;
 	margin-right: 30px;

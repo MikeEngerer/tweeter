@@ -1,7 +1,4 @@
-section#tweet-container {
-
-}
-
+/*default article view, slightly transparent*/
 #tweet-container article {
 	opacity: .7;
 	margin-top: 10px;
@@ -9,7 +6,7 @@ section#tweet-container {
 	border-radius: 6px
 
 }
-
+/*on hover, increase opacity and change bg color*/
 #tweet-container article:hover {
 	opacity: 1;
 	background-color: whitesmoke;
@@ -47,7 +44,7 @@ section#tweet-container {
 	margin-right: 10px;
 	margin-left: 4px;
 }
-
+/*entire footer*/
 #tweet-container footer {
 	padding-bottom: 30px;
 	border-top:solid mediumseagreen;
@@ -61,12 +58,12 @@ section#tweet-container {
 	padding-left: 7px;
 	padding-top: 7px;
 }
-
+/*div containing icons*/
 #tweet-container footer div {
 	display: inline-block;
 	margin-bottom: 40px;
 }
-
+/*individual icons, invis while article not hovered*/
 #tweet-container footer i {
 	display: none;
 	margin-top: 4px;
@@ -75,7 +72,7 @@ section#tweet-container {
 	padding: 3px;
 
 }
-
+/*on article hover, icons displayed*/
 #tweet-container article:hover i {
 	display: block;
 	margin-top: 4px;
@@ -91,10 +88,3 @@ section#tweet-container {
 	padding-left: 16px;
 	padding-right: 16px
 }
-
-
-
-/*
-footer:hover i {
-
-}*/
