@@ -3,6 +3,16 @@ section.new-tweet {
 	border-radius: 6px;
 }
 
+.new-tweet .error {
+	display: none;
+	text-align: center;
+	border: solid lightgrey;
+	background-color: #8ad1a9;
+	padding-left: 10px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	color: black;
+}
 .new-tweet h2 {
 	width: 90%;
 	margin-left: 1em;
@@ -28,6 +38,8 @@ section.new-tweet {
 }
 
 .new-tweet form span {
+	float: right;
+	margin-right: 30px;
 	margin-left: 20em;
 	padding-bottom: 1em;
 }

@@ -4,7 +4,7 @@ section#tweet-container {
 
 #tweet-container article {
 	opacity: .7;
-		margin-top: 10px;
+	margin-top: 10px;
 	border: solid lightgrey;
 	border-radius: 6px
 
@@ -17,7 +17,7 @@ section#tweet-container {
 }
 /*IMG, NAME, HANDLE*/
 #tweet-container header {
-	background-color: #c5d6cb;
+	background-color: #8ad1a9;
 	padding: 10px;
 	padding-bottom: 75px;
 	border-top-left-radius: 6px;
@@ -52,15 +52,16 @@ section#tweet-container {
 	border-top:solid lightgrey;
 
 }
-
+/*TIME AGO*/
 #tweet-container footer h5 {
 	float: left;
 	width: 100%;
 	padding-left: 10px;
 	padding-top: 2px
 }
-
+/*TEXT CONTENT*/
 #tweet-container p {
+	word-break: break-word;
 	padding: 16px;
 	padding-left: 16px;
 	padding-right: 16px
