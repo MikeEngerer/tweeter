@@ -1,8 +1,44 @@
+const charCounter = function() {
+	$(".new-tweet textarea").keyup(function(e) {
+		var len = $(this).val().length
+		$("span.counter").text(140 - len)
+		if ($("span.counter").text() < 0 && !$("span.counter").hasClass("red-text")) {
+			$("span.counter").attr("class", "counter red-text")
+		} else if ($("span.counter").text() >= 0 && $("span.counter").hasClass("red-text")) {
+			$("span.counter").attr("class", "counter")
+		}
+	})
+}
+
 const renderTweets = function(tweets) {
 	tweets.forEach(function(e) {
 		var $tweet = createTweetElement(e);
 		$('#tweet-container').prepend($tweet);
 	})
+}
+
+const loadTweets = function() {
+		$.ajax({
+			url: "/tweets/",
+			type: "GET", 
+			success: function(result) {
+				renderTweets(result)
+			}})
+}
+
+const renderNewest = function(tweets) {
+	var $tweet = createTweetElement(tweets[tweets.length - 1]);
+	$('#tweet-container').prepend($tweet);
+}
+
+const loadNewest = function () {
+		$.ajax({
+			url: "/tweets/",
+			type: "GET", 
+			success: function(result) {
+				renderNewest(result)
+			}})
+	return result;
 }
 
 const toggleCompose = function () {
@@ -52,18 +88,20 @@ const postTweet = function() {
 		let len = $rawText.length;
 		let $error = $(".new-tweet div.error")
 		if (len > 140) {
-			$error.text("Tweet length exceeds maximum value!");
-			$error.slideDown()
 			if ($error.css("display") === "block") {
 				$error.slideUp()
 				$error.text("Tweet length exceeds maximum value!");
 				$error.slideDown()
+			} else {
+				$error.text("Tweet length exceeds maximum value!");
+				$error.slideDown()
 			}
 		} else if (len === 0) {
-			$error.text("Tweet must contain content!");
-			$error.slideDown()
 			if ($error.css("display") === "block") {
 				$error.slideUp()
+				$error.text("Tweet must contain content!");
+				$error.slideDown()
+			} else {
 				$error.text("Tweet must contain content!");
 				$error.slideDown()
 			}
@@ -75,7 +113,7 @@ const postTweet = function() {
 			 	type: 'POST',
 			 	data: $text,
 			 	success: function(result) {
-		 		loadTweets()
+		 		loadNewest();
 		 	}})
 		 	$("textarea").val("")
 		 	$("span.counter").text(140)
@@ -83,18 +121,10 @@ const postTweet = function() {
 	})
 }
 
-const loadTweets = function() {
-		$.ajax({
-			url: "/tweets/",
-			type: "GET", 
-			success: function(result) {
-				renderTweets(result)
-			}})
-}
-
 $(document).ready(function() {
 	postTweet();
 	loadTweets();
 	toggleCompose();
+	charCounter();
 })
 
