@@ -6,7 +6,7 @@ Tweeter is a simple, single-page Twitter clone.
 
 ![Initial Page Load](https://github.com/MikeEngerer/tweeter/blob/master/public/images/initial.png "Initial Page Load")
 ![Compose Tweet](https://github.com/MikeEngerer/tweeter/blob/master/public/images/compose.png "Compose Tweet")
-![Empty Input](https://github.com/MikeEngerer/TinyApp/blob/master/screenshots/login_register.png "Empty Input")
+![Empty Input](https://github.com/MikeEngerer/tweeter/blob/master/screenshots/empty.png "Empty Input")
 ![Input Too Long](https://github.com/MikeEngerer/tweeter/blob/master/public/images/tooLong.png "Input Too Long")
 
 ## Install/Run
